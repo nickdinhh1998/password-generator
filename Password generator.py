@@ -13,5 +13,5 @@ while user_choice == None:
         user_choice = None
 
 characters = string.ascii_letters + string.digits + string.punctuation
-password = ''.join(random.choice(characters))
+password = ''.join(random.choice(characters) for i in range(1,user_choice+1))
 print('Your password is {}'.format(password))
